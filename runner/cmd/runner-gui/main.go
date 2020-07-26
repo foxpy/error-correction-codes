@@ -1,7 +1,11 @@
 package main
 
-import "github.com/foxpy/error-correction-codes/runner"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	runner.Test()
+	fmt.Println("GUI is not implemented")
+	os.Exit(1)
 }
