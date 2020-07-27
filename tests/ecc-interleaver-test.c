@@ -46,8 +46,6 @@ int main() {
 	test_loop(1, 4);
 	test_loop(1, 5);
 	test_loop(2, 2);
-	test_loop(2, 4);
-	test_loop(2, 5);
 	invalid_test();
 	return EXIT_SUCCESS;
 }
