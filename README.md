@@ -23,11 +23,11 @@ wraps bits into serial port representation (like what would be sent over RS-232 
 
 Executables:
 
-- [noisify](noisify.c#L11-L23) - consumes file/pipe and outputs damaged data,
+- [noisify](noisify.c#L12-L28) - consumes file/pipe and outputs damaged data,
 damage is highly customizable
-- [ecc-repetition](ecc-repetition.c#L13-L19) - basic ECC code, pretty inefficient
-- [ecc-hamming](ecc-hamming.c#L12-L20) - basic ECC code, more efficient than previous one
+- [ecc-repetition](ecc-repetition.c#L14-L18) - basic ECC code, pretty inefficient
+- [ecc-hamming](ecc-hamming.c#L13-L19) - basic ECC code, more efficient than previous one
 - [ecc-interleaver](ecc-interleaver.c#L13-L21) - interleaver with configurable window size
 - [error-count](error-count.c#L9-L10) - print number of different bits between two files
-- [random-gen](random-gen.c#L12-L16) - outputs good quality (not crypto quality though) random
-- [serial-wrap](serial-wrap.c#L11-L23) - (un)wraps data in serial port representation
+- [random-gen](random-gen.c#L12-L14) - outputs good quality (not crypto quality though) random
+- [serial-wrap](serial-wrap.c#L12-L21) - (un)wraps data in serial port representation
