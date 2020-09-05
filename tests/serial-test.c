@@ -289,7 +289,7 @@ int main() {
 	assert(serial_packet_length(&cfg) == 10);
 	assert(serial_encode(&encoded, &input, &cfg) == 4);
 	memory = (uint8_t*) bitarray_to_memory(&encoded, &nbits, &nbytes);
-	memory[0] |= 0b00000001; // damage first packet
+	memory[0] |= 0x01; // damage first packet
 	bitarray_fill_from_memory(&encoded, memory, nbits);
 	assert(serial_decode(&decoded, &encoded, &cfg) == 1);
 	free(memory);

@@ -11,7 +11,7 @@
 int main() {
 	bits_t bits;
 	bits_t bits_copy;
-	char memory[4] = { 0b11000011, 0b10101001, 0b10000111, 0b00101011, };
+	unsigned char memory[4] = { 0xc3, 0xa9, 0x87, 0x2b };
 	bit check_memory[32] = {
 		1, 1, 0, 0, 0, 0, 1, 1,
 		1, 0, 0, 1, 0, 1, 0, 1,
